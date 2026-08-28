@@ -1,0 +1,8 @@
+{
+  "appId": "com.pothys.app",
+  "appName": "Pothys App",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http"
+  }
+}
