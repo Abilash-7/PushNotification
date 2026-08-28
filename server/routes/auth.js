@@ -32,7 +32,7 @@ router.post(
                 password
             } = req.body;
 
-
+console.log( username,password );
             // -----------------------------------------
             // VALIDATION
             // -----------------------------------------
