@@ -41,7 +41,6 @@ const app = express();
 const PORT =
     process.env.PORT || 5000;
 
-
 // =====================================================
 // CORS
 // =====================================================
@@ -51,25 +50,15 @@ app.use(
         origin: [
             "http://localhost:5173",
             "http://192.168.137.1:5173",
-            "https://pushnotify-ashy.vercel.app",
             "http://192.168.5.62:5173",
             "http://localhost:3000",
             "http://192.168.5.13:6565",
-            "http://192.168.5.13:8080"
+            "http://192.168.5.13:8080",
+            "https://pushnotify-ashy.vercel.app"
         ],
-
-        methods: [
-            "GET",
-            "POST",
-            "PUT",
-            "DELETE",
-            "OPTIONS"
-        ],
-
-        allowedHeaders: [
-            "Content-Type",
-            "Authorization"
-        ]
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization"],
+        credentials: true
     })
 );
 
